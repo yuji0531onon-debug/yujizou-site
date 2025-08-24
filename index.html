@@ -2,118 +2,50 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ゆじぞう | 学生Web制作者</title>
-  <meta name="description" content="学生Web制作者ゆじぞうのポートフォリオ。プロフィール・スキル紹介。">
   <style>
     body {
+      font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Arial, sans-serif;
-      background: #f8fafc;
-      color: #1e293b;
-      line-height: 1.6;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      text-align: center;
     }
     header {
-      background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+      background-color: #4CAF50;
       color: white;
-      text-align: center;
-      padding: 40px 20px 60px;
+      padding: 2rem 1rem;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 8px 0 0;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-    main {
-      max-width: 800px;
-      margin: -50px auto 0;
-      padding: 20px;
-    }
-    .profile-card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      padding: 30px;
-      text-align: center;
-    }
-    .profile-card img {
+    header img {
       width: 120px;
       height: 120px;
-      object-fit: cover;
       border-radius: 50%;
-      margin-bottom: 16px;
-      border: 3px solid #3b82f6;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid white;
     }
-    .profile-card h2 {
-      margin: 0;
-      font-size: 1.4rem;
-      color: #0f172a;
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 1.8rem;
     }
-    .profile-card p {
-      color: #475569;
-      margin: 6px 0 0;
+    main {
+      padding: 2rem 1rem;
     }
-    section {
-      margin: 40px 0;
-    }
-    h3 {
-      font-size: 1.2rem;
-      color: #0f172a;
-      margin-bottom: 10px;
-    }
-    .skills span {
-      display: inline-block;
-      margin: 6px;
-      padding: 8px 14px;
-      background: #e0f2fe;
-      color: #0369a1;
-      border-radius: 12px;
-      font-size: 0.9rem;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      font-size: 0.85rem;
-      color: #64748b;
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>学生Web制作者 ゆじぞう</h1>
-    <p>「伝わるデザイン」を大切に、シンプルで見やすいサイトを作ります。</p>
+    <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=300&q=80" alt="プロフィール写真">
+    <h1>大学生Web制作者 ゆじぞう</h1>
   </header>
-
   <main>
-    <div class="profile-card">
-      <!-- プロフィール画像（差し替え済み：笑顔の学生風） -->
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="プロフィール写真">
-      <h2>ゆじぞう</h2>
-      <p>大学3年生 / Web制作を学習中。<br>LPや個人サイトのコーディングを得意としています。</p>
-    </div>
-
-    <section id="skills">
-      <h3>スキル</h3>
-      <div class="skills">
-        <span>HTML / CSS</span>
-        <span>レスポンシブ対応</span>
-        <span>JavaScript 基礎</span>
-        <span>Git / GitHub</span>
-        <span>SEO 基本対策</span>
-      </div>
-    </section>
+    <p>これはサンプルの自己紹介サイトです。</p>
   </main>
-
-  <footer>
-    © <span id="year"></span> yujizou. All rights reserved.
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
