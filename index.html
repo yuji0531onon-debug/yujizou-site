@@ -2,83 +2,122 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ゆじぞう | 学生Web制作者</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>学生Web制作者 ゆじぞう｜伝わるLP/コーポレート制作</title>
+  <meta name="description" content="学生Web制作者ゆじぞう。読みやすさと成果にこだわったLP/コーポレートサイトを短納期・丁寧対応で制作します。">
+  <meta name="theme-color" content="#2563eb">
   <style>
-    body {
-      font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f9;
-      color: #333;
-      line-height: 1.6;
+    :root{
+      --brand:#2563eb; --brand2:#60a5fa;
+      --bg:#f6f8fc; --text:#0f172a; --muted:#64748b;
+      --card:#ffffff; --shadow:0 10px 30px rgba(15,23,42,.08);
+      --radius:16px;
     }
-    header {
-      background: linear-gradient(135deg, #1e90ff, #4682b4);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid white;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      font-weight: bold;
-    }
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    section h2 {
-      font-size: 1.5em;
-      border-bottom: 2px solid #1e90ff;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-      color: #1e90ff;
-    }
-    footer {
-      background: #1e90ff;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Meiryo",Arial,sans-serif;line-height:1.7}
+    .container{max-width:1024px;margin:0 auto;padding:0 20px}
+    /* Hero */
+    header{background:linear-gradient(135deg,var(--brand),var(--brand2));
+      color:#fff;padding:56px 0 72px;text-align:center}
+    header .avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;
+      border:4px solid #fff;box-shadow:0 8px 24px rgba(0,0,0,.18);margin-bottom:16px}
+    header h1{margin:0;font-size:2.1rem;font-weight:800}
+    header p.lead{margin:10px auto 20px;max-width:680px;opacity:.95}
+    .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:8px 0 18px}
+    .badge{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);
+      padding:6px 10px;border-radius:999px;font-weight:700;font-size:.85rem}
+    /* Sections */
+    .section{margin:-40px 0 40px}
+    .card{background:var(--card);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:26px}
+    h2{font-size:1.25rem;margin:0 0 14px;color:var(--brand);
+      border-left:4px solid var(--brand);padding-left:10px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:720px){ .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
+    .point{display:flex;gap:12px;align-items:flex-start}
+    .point b{display:block}
+    .kpi{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
+    .kpi span{background:#eaf2ff;color:#1d4ed8;border-radius:10px;padding:6px 10px;font-weight:700}
+    .work{border:1px solid #e6ecfb;border-radius:14px;overflow:hidden;background:#fff}
+    .work .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#e5f0ff,#f7fbff)}
+    .work .body{padding:14px}
+    .work h3{margin:0 0 6px;font-size:1rem}
+    .meta{color:var(--muted);font-size:.9rem}
+    footer{padding:28px 10px;text-align:center;color:#8a98ab}
   </style>
 </head>
 <body>
+  <!-- Hero -->
   <header>
-    <img src="https://picsum.photos/200?random=2" alt="プロフィール画像">
+    <img class="avatar"
+      src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=300&q=80"
+      alt="プロフィール写真">
     <h1>学生Web制作者 ゆじぞう</h1>
+    <p class="lead">読まれる構成 × 速い表示 × スマホ最適化。<br>LP／小規模コーポレートを、<b>わかりやすく・軽く・きれい</b>に仕上げます。</p>
+    <div class="badges">
+      <span class="badge">最短3日で初稿</span>
+      <span class="badge">修正3回まで無料</span>
+      <span class="badge">スマホ最適化対応</span>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>自己紹介</h2>
-      <p>大学で情報系を学びながら、Web制作やデザインを実践しています。シンプルかつ使いやすいデザインを心がけ、信頼されるサイト制作を目指しています。</p>
+  <main class="container">
+    <!-- 強み -->
+    <section class="section">
+      <div class="card">
+        <h2>選ばれる理由</h2>
+        <div class="grid">
+          <div class="point"><div>📐</div>
+            <div><b>情報設計から整える</b><br><span class="meta">目的に合わせて見出し・導線を再設計。読み手が迷わないページに。</span></div>
+          </div>
+          <div class="point"><div>⚡</div>
+            <div><b>軽量・高速表示</b><br><span class="meta">ライブラリ最小限・画像最適化でCore Web Vitalsを意識。</span></div>
+          </div>
+          <div class="point"><div>📱</div>
+            <div><b>スマホ前提のデザイン</b><br><span class="meta">モバイルでの可読性とタップしやすさを優先。</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>スキル</h2>
-      <ul>
-        <li>HTML / CSS / JavaScript</li>
-        <li>レスポンシブデザイン</li>
-        <li>GitHub Pages を使った公開</li>
-      </ul>
+    <!-- 実績イメージ -->
+    <section id="works" class="section">
+      <div class="card">
+        <h2>制作イメージ</h2>
+        <div class="grid cols-3">
+          <article class="work"><div class="thumb"></div>
+            <div class="body"><h3>LP｜サービス紹介</h3><div class="meta">レスポンシブ / 画像最適化</div></div>
+          </article>
+          <article class="work"><div class="thumb"></div>
+            <div class="body"><h3>コーポレート｜小規模サイト</h3><div class="meta">3〜5ページ / お問い合わせ導線設計</div></div>
+          </article>
+          <article class="work"><div class="thumb"></div>
+            <div class="body"><h3>採用向けLP</h3><div class="meta">応募導線最適化 / 速度改善</div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 自己紹介 -->
+    <section class="section">
+      <div class="card">
+        <h2>自己紹介</h2>
+        <p class="meta">
+          大学で情報系を学びながら、フロント実装とUI改善に注力。<br>
+          小さな修正も素早く、丁寧に。リピートいただける制作を目指しています。
+        </p>
+        <h2 style="margin-top:22px">スキル</h2>
+        <div class="kpi">
+          <span>HTML/CSS(SCSS)</span><span>JavaScript(基礎)</span>
+          <span>BEM設計</span><span>レスポンシブ</span>
+          <span>Git/GitHub</span><span>SEO基礎</span>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    &copy; 2025 ゆじぞう - Student Web Creator
-  </footer>
+  <footer>© <span id="y"></span> yujizou — Student Web Creator</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
