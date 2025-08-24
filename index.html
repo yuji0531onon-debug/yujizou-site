@@ -40,7 +40,7 @@
     .kpi{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
     .kpi span{background:#eaf2ff;color:#1d4ed8;border-radius:10px;padding:6px 10px;font-weight:700}
     .work{border:1px solid #e6ecfb;border-radius:14px;overflow:hidden;background:#fff}
-    .work .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#e5f0ff,#f7fbff)}
+    .work .thumb{aspect-ratio:16/9;background-size:cover;background-position:center}
     .work .body{padding:14px}
     .work h3{margin:0 0 6px;font-size:1rem}
     .meta{color:var(--muted);font-size:.9rem}
@@ -81,19 +81,27 @@
       </div>
     </section>
 
-    <!-- 実績イメージ -->
+    <!-- 制作イメージ -->
     <section id="works" class="section">
       <div class="card">
         <h2>制作イメージ</h2>
         <div class="grid cols-3">
-          <article class="work"><div class="thumb"></div>
-            <div class="body"><h3>LP｜サービス紹介</h3><div class="meta">レスポンシブ / 画像最適化</div></div>
+          <!-- LP サンプル -->
+          <article class="work">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="body">
+              <h3>LP｜サービス紹介</h3>
+              <div class="meta">レスポンシブ / 画像最適化 / CTA導線</div>
+            </div>
           </article>
-          <article class="work"><div class="thumb"></div>
-            <div class="body"><h3>コーポレート｜小規模サイト</h3><div class="meta">3〜5ページ / お問い合わせ導線設計</div></div>
-          </article>
-          <article class="work"><div class="thumb"></div>
-            <div class="body"><h3>採用向けLP</h3><div class="meta">応募導線最適化 / 速度改善</div></div>
+
+          <!-- コーポレート サンプル -->
+          <article class="work">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="body">
+              <h3>コーポレート｜小規模サイト</h3>
+              <div class="meta">3〜5ページ / お問い合わせ導線設計</div>
+            </div>
           </article>
         </div>
       </div>
